@@ -1,3 +1,9 @@
+enum GenderType {
+  Male = 'male',
+  Female = 'female',
+  genderNeutral = 'genderNeutral'
+}
+
 let studentID:number = 12345;
 let studentName:string = 'Jenny Kim';
 let age = 21;
@@ -9,7 +15,7 @@ let student1 = {
   studentID: 121212,
   studentName: 'Janet Jackson',
   age: 30,
-  gender: 'Femail',
+  gender: GenderType.Female,
   subject: 'Mongo DB',
   courseCompleted: false
 }
@@ -18,7 +24,7 @@ interface Student {
   readonly studentID:number;
   studentName:string;
   age?:number;
-  gender:string;
+  gender: 'male' | 'female' | 'genderNeutral';
   subject:string;
   courseCompleted:boolean;
   // addComment (comment:string): string;
@@ -31,7 +37,7 @@ function getStudentDetails(studentID: number): Student
   return {
   studentID: 123456,
   studentName: 'Mark Jacobs',
-  gender: 'male',
+  gender:'female',
   subject: 'Node JS',
   courseCompleted: true
   };

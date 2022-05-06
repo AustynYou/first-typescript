@@ -1,3 +1,9 @@
+var GenderType;
+(function (GenderType) {
+    GenderType["Male"] = "male";
+    GenderType["Female"] = "female";
+    GenderType["genderNeutral"] = "genderNeutral";
+})(GenderType || (GenderType = {}));
 var studentID = 12345;
 var studentName = 'Jenny Kim';
 var age = 21;
@@ -8,7 +14,7 @@ var student1 = {
     studentID: 121212,
     studentName: 'Janet Jackson',
     age: 30,
-    gender: 'Femail',
+    gender: GenderType.Female,
     subject: 'Mongo DB',
     courseCompleted: false
 };
@@ -16,7 +22,7 @@ function getStudentDetails(studentID) {
     return {
         studentID: 123456,
         studentName: 'Mark Jacobs',
-        gender: 'male',
+        gender: 'female',
         subject: 'Node JS',
         courseCompleted: true
     };
