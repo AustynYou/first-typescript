@@ -1,12 +1,9 @@
-type StringOrNum = string | number;
-let itemPrice: number;
+const sendGreeting (message = 'Hello', userName = 'there'): 
+void => 
+  console.log(`${message}, ${userName}`);
 
-const setItemPrice = (price: StringOrNum):void => {
-  if (typeof price === 'string') {
-    itemPrice = 0;
-  } else {
-  itemPrice = price;
-  }
-};
+sendGreeting('Hello');
 
-setItemPrice(50);
+sendGreeting();
+sendGreeting('Good Morning');
+sendGreeting('Good afternoon', 'Jenny');
