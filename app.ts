@@ -1,13 +1,16 @@
-let student = {
-  name: 'Jake',
-  course: 'Getting Started with Typescript',
-  codingIQ: 80,
-  code: function () {
-    console.log('brain is working hard');
-    
-  }
-}
+let studentID:number = 12345;
+let studentName:string = 'Jenny Kim';
+let gender:string = 'demale';
+let subject:string = 'JavaScript';
+let courseCompleted:boolean = false;
 
-function calculateCodingIQ (lostPoints) {
-  return 100 - lostPoints;
+function getStudentDetails(studentID: number) 
+:{
+  studentID:number;
+  studentName:string;
+  gender:string;
+  subject:string;
+  createDate: Date;
+} {
+  return null;
 }
